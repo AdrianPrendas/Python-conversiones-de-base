@@ -23,21 +23,21 @@ def decimal_a_binario():
 	try:
 		print( "binario = {0:08b}".format(int(decimal)) )
 	except:
-		print("Error ("+decimal+") no es decinal")
+		print("Error ("+decimal+") no es decimal")
 
 def decimal_a_octal():
 	decimal = input("decimal: ")
 	try:
 		print( "octal = {0:o}".format(int(decimal)) )
 	except:
-		print("Error ("+decimal+") no es decinal")
+		print("Error ("+decimal+") no es decimal")
 
 def decimal_a_hexadecimal():
 	decimal = input("decimal: ")
 	try:
 		print( "hexadecimal = {0:02x}".format(int(decimal)) )
 	except:
-		print("Error ("+decimal+") no es decinal")
+		print("Error ("+decimal+") no es decimal")
 
 def binario_a_decimal():
 	binario = input("binario: ")
@@ -131,8 +131,7 @@ def program():
 	print_options()
 	option = input("seleccione alguna opcion: ")
 	switch(int(option))()
-	if option != "13":
-		program() # recursion
+	if option != "13": program() # recursion
 
 
 program() # inicio del programa
